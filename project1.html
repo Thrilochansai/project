@@ -1,0 +1,580 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky ;
+    width:100%;
+    z-index: 1;
+    padding:2%;
+    }
+   .brand-title {
+    font-size: 1.5rem;
+    color:red;
+   margin-left: 3%;
+   font-family:fantasy;
+    }
+
+     .navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+   .navbar-links li {
+    margin-left: 20px;
+    }
+
+   .navbar-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    }
+    .navbar-links ul li ul{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:65%;
+    background-color: #333;
+    padding:15px 0;
+    min-width:150px;
+     }
+   .navbar-links ul li ul li{
+    display: block;
+    }
+    .navbar-links ul li ul li a{
+    color:#fff;
+    padding:15px;
+    }
+    .navbar-links ul li ul li a:hover{
+    background-color: red;
+    }
+     .navbar-links ul li:hover ul{
+    display: block;
+    }
+
+    .toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    }
+
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+     }
+
+ .whole{
+  margin-top: 0;
+ }
+      
+      .navbody{
+        filter: contrast(150%);
+      }
+      .logo {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        padding-left: 10%;
+      }
+      li {
+        display: inline-block;
+        margin-right: 25px;
+      }
+      .button {
+        background-color: transparent;
+      }
+      .navbody {
+        margin: 10%;
+      }
+      .container {
+        background-image: url(businessman-sitting-by-table-cafe\ \(2\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+        /* filter:brightness(50%); */
+      }
+      .navtop {
+        color: yellow;
+        font-weight: 500;
+      }
+      .nav2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 1000;
+      }
+      .navbutton {
+        display: flex;
+        gap: 5%;
+        padding: 1%;
+      }
+      .meettheauthor {
+        color: yellow;
+      }
+      .discover {
+        background-color: #ff4500;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+      
+      }
+      .mordern{
+        color: gold;
+        margin-right: 300px;
+        margin-top: 50px;
+        font-size: larger;
+        
+      }
+      .FreePik {
+        color: orange;
+      }
+      .main-container{
+        display: flex;
+        justify-content: space-around;
+        /* align-content: center; */
+        /* align-items: center; */
+        margin: 10%;
+        margin-top: 5%;
+      }
+      .img{
+        /* margin-left: 10%; */
+      }
+      .page2{
+        /* margin-right: 10%; */
+      }
+      .whats{
+        color: gold;
+        
+      }
+      .whatsinside{
+        text-align: center;
+        /* justify-content: space-around; */
+        margin-top: 1%;
+      }
+      .boxitems p{
+        /* border: 10px; */
+        background-color: cadetblue;
+        border-radius: 15px;
+        height: 10%;
+        gap: 100px;
+        margin: 15%;
+        overflow: hidden;
+        
+      }
+      .boxborder{
+        border: 2px solid red;
+        border-radius: 20px;
+        margin-left: 10%;
+        height: 100%;
+        width: 100%;
+        /* padding-left: 10%; */
+      }
+      .whatsins{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10%;
+        justify-content:space-around;
+        /* margin: 5%; */
+        margin-left: 15%;
+        /* margin-right: 30% */
+      }
+      .whts{
+        /* margin-left: 43%; */
+        /* margin-top: 5%; */
+      }
+      .page3{
+        background-color: cadetblue;
+        opacity: 1.0;
+        height: 100px;
+      }
+      .meetauthor{
+        color: gold;
+      }
+      .author{
+        display: flex;
+        justify-content: space-around;
+
+        margin-top: 5%;
+      }
+       .image2{
+        border-radius: 50%;
+        border: 5px solid gold;
+        margin-left: 20%;
+        margin-top: 20%;
+        
+      }
+      .meetauthr{
+        /* margin-top: 7%; */
+        /* padding-left: 20%; */
+      }
+      .imge2{
+        padding-left: 10%;
+        background-image: url(circle-scatter-haikei.png);
+        width: 50vw;
+        height: 50vh;
+        /* margin-right:90% ; */
+        /* height: 100%; */
+      }
+      .reviews{
+        color: gold;
+        
+      }
+      .review{
+        text-align: center;
+        margin-top: 5%;
+      }
+      .parentcard1 {
+        /* border: 2px solid; */
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+        position: relative;
+        background-image: url(businessman-sitting-by-table-cafe\ \(2\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .childcard1 {
+        position: absolute;
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 50%;
+        left: 30%;
+        background-color: orange;
+        border-radius: 20px;
+      }
+      h2{
+        text-align: center;
+      }
+      
+      
+      .sandyimg{
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 20px;
+        
+      }
+      .card1{
+        color: white;
+        padding-top: 70%;
+        padding-left: 5%;
+      }
+      .allcards{
+        display: flex;
+        justify-content: space-around;
+      }
+      .checked{
+        color: orange;
+      }
+      .rating{
+        font-weight: 1000;
+        font-size: 1.5rem;
+      }
+      /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+
+
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to bottom right, #ff7f50, #ff4500);
+    height: 90vh;
+    margin-top: 5%;
+}
+
+.ebook-section, .contact-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footerh{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4500;
+}
+
+.ebook-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ebook-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ebook-form button:hover {
+    background-color: #ff7f50;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #ff4500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff7f50;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+@media screen and(width<450px) {
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .page2{
+margin-right: 10px;
+  }
+}
+    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">CLOTHING SWAP</div>
+      
+       <a href="#" class="toggle-button" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a> 
+      <div class="navbar-links">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#women">Women &#9662;</a>
+                  <ul>
+                      <li><a href="#">Dress</a></li>
+                      <li><a href="#">Jacket</a></li>
+                      <li><a href="#">Sweater</a></li>
+                  </ul>
+              </li>
+              <li><a href="#men">Men &#9662;</a>
+              <ul>
+                  <li><a href="#">Sweater</a></li>
+                  <li><a href="#">Jacket</a></li>
+                  <li><a href="#">Pant</a></li>
+              </ul></li>
+              <li><a href="#shoes">Shoes</a></li>
+              <li><a href="#magazine">Magazine</a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+      </div> 
+
+  </nav>
+    <div class="whole">
+    <div class="container">
+      <div class="navbody" id="TheBook" >
+        <div><span class="navtop">Introdusing ebook</span></div>
+        <div>
+          <span class="nav2"
+            >ebook landing page <br />
+            for professionals</span
+          >
+        </div>
+        <div class="navbutton">
+          <button class="discover">Discover more</button>
+          <div><span class="meettheauthor">Meet the author</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+        <div class="img">
+            <img src="tablet-screen-contents.jpg" alt="" width="70%" height="100%" >
+        </div>
+        <div class="page2">
+            <p><span class="mordern">Mordern&creative </span></p> 
+            <h1>About the Book</h1>
+            <p>Credit goes to <span class="FreePik">FreePik</span>  for images used in this ebook landing page template. you may browse FreePik to download more free images for your website.</p>
+            <p>Templatemo is one of the best websites to download CSS templates for any purpose. this is an ebook landing page template using Bootstrap 5 and CSS layout.</p>
+
+        </div>
+
+    </div>
+    <div class="whatsinside">
+      <h4><span class="whats">What's inside ? </span></h4>
+      <h1>Preview at glance</h1>
+    </div>
+    <div class="whatsins">
+      <div class="boxborder">
+        <div class="boxitems">
+          <div>
+            <p>Introduction</p>
+          </div>
+          <div>
+           <p>Chapter 1: <span>Win back your time</span></p>
+          </div>
+          <div>
+           <p>Chapter 2: <span>Work less,Do more</span></p>
+          </div>
+          <div>
+           <p>Chapter 3: <span>Deligate</span></p>
+          </div>
+          <div>
+           <p>Chapter 4: <span>Habits</span></p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="whts">
+        <div>
+         <h2>Introdusing ebook</h2>
+         <p>This ebook landing page is good to use for any purpose. This layout is based on Bootstrap 5 CSS framework.</p>
+         <p><span>What is content marketing ??</span> If you are wondering what content marketing is all about, this is the place to start.</p>
+        </div>
+        <div>
+          <h2 class="page3">Lorem ipsum dolor sit amet, consectetur adipsicing kengan omega kohm tokito.</h2>
+        </div>
+        <div>
+          <p>When you need free HTML CSS templates,please visit TemplateMo website which provides a variety type of templates.</p>
+        </div>
+      </div>
+    </div>
+    <div class="author" id="TheAuthor">
+      <div class="imge2">
+        <img class="image2" src="portrait-mature-smiling-authoress-sitting-desk.jpg" alt="" width="50%" height="60%">
+
+
+      </div>
+      <div class="meetauthr">
+        <h3><span class="meetauthor">Meet Author</span></h3>
+        <h1>prof.Sophia</h1>
+        <p>This is an ebook landing page template with Bootstrap 5 CSS framework. It is easy to coustumize with the use of Bootstrap CSS classes.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas aliquam, autem quasi consequuntur tempore, fuga ab itaque cum, quos quia aliquid ea asperiores iusto ipsa? Quidem minima temporibus commodi necessitatibus!</p>
+      </div>
+    </div>
+    <div class="review" id="Review">
+      <h2><span class="reviews">Reviews</span></h2>
+      <h1>What people saying</h1>
+    </div>
+    <div class="allcards">
+      <div class="parentcard1">
+        <div class="childcard1">
+          <img src="portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="" class="sandyimg"/>
+          <h2>Sandy</h2>
+          <h2>Artist</h2>
+        </div>
+        <div class="card1">
+          <div><span class="rating">4.5</span><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus neque ipsa nulla voluptate ab minima fugiat animi provident facilis! Dicta repellendus quaerat animi dolores doloremque sapiente accusamus eveniet nihil nobis.</p>
+        </div>
+      </div>
+      <div class="parentcard1">
+        <div class="childcard1">
+          <img src="portrait-young-redhead-bearded-male.jpg" alt="" class="sandyimg"/>
+          <h2>Sandy</h2>
+          <h2>Artist</h2>
+        </div>
+        <div class="card1">
+          <div><span class="rating">3.5</span><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></div>
+          <p>If you need some specific CSS templates, you can google with keyword such as Templatemo one-page, templatemo portfolio, etc.</p>
+        </div>
+      </div>
+      <div class="parentcard1">
+        <div class="childcard1">
+          <img src="pretty-blonde-woman.jpg" alt="" class="sandyimg"/>
+          <h2>Candy</h2>
+          <h2> Design</h2>
+        </div>
+        <div class="card1">
+          <div><span class="rating">5</span><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></div>
+          <p>Please tell your friends about our website that we provide 100% free templates for everyone. Thankyou for using our templates.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer" id="Contact">
+      <div class="ebook-section">
+          <h2 class="footerh">Get your free ebook</h2>
+          <form class="ebook-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="your@company.com" required>
+              <button type="submit">Download ebook</button>
+          </form>
+      </div>
+
+      <div class="contact-section">
+          <h2 class="footerh">Contact</h2>
+          <p><i class="fas fa-map-marker-alt"></i> London, United Kingdom</p>
+          <p><i class="fas fa-phone"></i> 010-020-0340</p>
+          <p><i class="fas fa-envelope"></i> info@company.com</p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="copyright">Copyright © 2048 ebook company</p>
+      </div>
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
